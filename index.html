@@ -139,57 +139,49 @@
         }
 
         /* Navigation */
-        .nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 30px;
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
-            border-bottom: 1px solid rgba(201, 162, 77, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px; /* Slightly reduced padding for a sleeker look */
+    background: rgba(255, 255, 255, 0.85); /* Glassmorphism base */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(201, 162, 77, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-family: 'Playfair Display', serif;
-            font-weight: 700;
-            font-size: 20px;
-            color: var(--text-main);
-        }
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 18px; /* Professional B2B size */
+    color: #111317; /* Near-Black */
+    text-decoration: none;
+}
 
-        .logo-icon {
-            width: 62px;
-            height: 40px;
-          
-           
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-        }
+.logo-icon {
+    height: 40px; /* Keeps the navbar height consistent */
+    display: flex;
+    align-items: center;
+}
 
-        .nav-links {
-            display: flex;
-            gap: 24px;
-        }
+.logo-icon img {
+    height: 100%; /* Scales to match the logo-icon height */
+    width: auto;  /* Maintains aspect ratio */
+    display: block;
+}
 
-        .nav-links a {
-            text-decoration: none;
-            color: var(--text-main);
-            font-size: 14px;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
+.nav-links {
+    display: flex;
+    gap: 32px; /* Increased gap for better whitespace */
+}
 
-        .nav-links a:hover {
-            color: var(--primary-gold);
-        }
+/* Ensure the button stays aligned */
 
         /* Sections General */
         .section {
@@ -854,8 +846,9 @@
             <nav class="nav">
                 <div class="logo">
                     <div class="logo-icon">
-                    
-                        <img src="./logo.png" alt="Business Meeting">
+                    <img src="./logo.png" alt="Gold Label Sales Logo">
+                        </div>
+                </div>
                 
                 <div class="nav-links">
                     <a href="#">Services</a>
